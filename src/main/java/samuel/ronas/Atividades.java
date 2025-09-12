@@ -4,6 +4,7 @@ package samuel.ronas;
 class Classe{
     String atributo;
 
+    //Isso abaixo e um construtor tem que se ter o mesmo nome da classe
     public Classe(String parametro){
         this.atributo = parametro;
     }
