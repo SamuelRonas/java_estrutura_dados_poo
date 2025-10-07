@@ -1,4 +1,4 @@
-package samuel.ronas;
+package samuel.ronas.setembro;
 
 import lombok.Data;
 
@@ -53,8 +53,8 @@ class BancoDigital extends Banco {
 public class Main {
 
     public static void main(String[] args) {
-        BancoFisico BB = new BancoFisico("DrG726Rs", "samuel", 85, "BBSP");
-        BancoDigital nubank = new BancoDigital("null", "null", 54, "V1");
+        LogicA arit = new LogicA();
+        System.out.println(arit.subtrair(1, 2));
         
     }
 }

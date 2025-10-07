@@ -1,4 +1,4 @@
-package samuel.ronas;
+package samuel.ronas.setembro;
 
 public class LogicA {
 
@@ -20,6 +20,7 @@ public class LogicA {
     public int dividir(int n1, int n2) {
         int resultado = n1 / n2;
         return resultado;
-
     }
+
+    
 }

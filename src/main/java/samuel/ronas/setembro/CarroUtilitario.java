@@ -1,4 +1,4 @@
-package samuel.ronas;
+package samuel.ronas.setembro;
 
 import lombok.Data;
 
