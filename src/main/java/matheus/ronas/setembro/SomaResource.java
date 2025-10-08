@@ -1,4 +1,4 @@
-package samuel.ronas.setembro;
+package matheus.ronas.setembro;
 
 import jakarta.ws.rs.POST;
 import jakarta.ws.rs.Path;

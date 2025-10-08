@@ -1,4 +1,4 @@
-package samuel.ronas.outubro.atividade_entregas.controller;
+package matheus.ronas.outubro.atividade_entregas.controller;
 
 import java.util.List;
 
@@ -9,8 +9,8 @@ import jakarta.ws.rs.Path;
 import jakarta.ws.rs.PathParam;
 import jakarta.ws.rs.Produces;
 import jakarta.ws.rs.core.MediaType;
-import samuel.ronas.outubro.atividade_entregas.dto.Entrega;
-import samuel.ronas.outubro.atividade_entregas.service.EntregaService;
+import matheus.ronas.outubro.atividade_entregas.dto.Entrega;
+import matheus.ronas.outubro.atividade_entregas.service.EntregaService;
 
 @Path("/entregas")
 @Produces(MediaType.APPLICATION_JSON)

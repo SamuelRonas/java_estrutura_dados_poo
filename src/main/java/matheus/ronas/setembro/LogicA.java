@@ -1,4 +1,4 @@
-package samuel.ronas.setembro;
+package matheus.ronas.setembro;
 
 public class LogicA {
 

@@ -1,4 +1,4 @@
-// package samuel.ronas;
+// package matheus.ronas;
 
 // import io.quarkus.test.junit.QuarkusIntegrationTest;
 

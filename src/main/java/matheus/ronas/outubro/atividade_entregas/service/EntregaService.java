@@ -1,10 +1,10 @@
-package samuel.ronas.outubro.atividade_entregas.service;
+package matheus.ronas.outubro.atividade_entregas.service;
 
 import java.util.ArrayList;
 import java.util.List;
 
 import jakarta.enterprise.context.ApplicationScoped;
-import samuel.ronas.outubro.atividade_entregas.dto.Entrega;
+import matheus.ronas.outubro.atividade_entregas.dto.Entrega;
 
 @ApplicationScoped
 public class EntregaService {

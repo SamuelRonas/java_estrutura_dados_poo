@@ -1,4 +1,4 @@
-package samuel.ronas.outubro.atividade_entregas.dto;
+package matheus.ronas.outubro.atividade_entregas.dto;
 
 import lombok.Data;
 
