@@ -20,27 +20,27 @@ public class EntregaResource {
     @Inject
     EntregaService entregaService;
 
-    @GET
-    @Path("/pendentes")
-    public List<Entrega> listarPendentes() {
-        return entregaService.listarPendentes();
-    }
+    // @GET
+    // @Path("/pendentes")
+    // public List<Entrega> listarPendentes() {
+    //     return entregaService.listarPendentes();
+    // }
 
-    @GET
-    @Path("/valorTotal")
-    public double calcularValorTotal() {
-        return entregaService.calcularValorTotal();
-    }
+    // @GET
+    // @Path("/valorTotal")
+    // public double calcularValorTotal() {
+    //     return entregaService.calcularValorTotal();
+    // }
 
-    @GET
-    @Path("/pesadas")
-    public List<Entrega> listarPesadas() {
-        return entregaService.listarPesadas();
-    }
+    // @GET
+    // @Path("/pesadas")
+    // public List<Entrega> listarPesadas() {
+    //     return entregaService.listarPesadas();
+    // }
 
-    @GET
-    @Path("/buscar/{destino}")
-    public List<Entrega> buscarPorDestino(@PathParam("destino") String destino) {
-        return entregaService.buscarPorDestino(destino);
-    }
+    // @GET
+    // @Path("/buscar/{destino}")
+    // public List<Entrega> buscarPorDestino(@PathParam("destino") String destino) {
+    //     return entregaService.buscarPorDestino(destino);
+    // }
 }
