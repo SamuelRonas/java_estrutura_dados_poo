@@ -23,9 +23,7 @@ public class Main {
         List<Caixa> verdes = CaixaService.separarPorCor(caixas, "Verde");
         System.out.println("Caixas Verde: " + verdes.size());
 
-        // Separar caixas por tamanho
-        List<Caixa> grandes = CaixaService.separarPorTamanho(caixas, "Grande");
-        System.out.println("Caixas grandes: " + grandes.size());
+       
     }
 }
 

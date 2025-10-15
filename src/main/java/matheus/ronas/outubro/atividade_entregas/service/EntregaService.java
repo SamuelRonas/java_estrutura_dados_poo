@@ -20,5 +20,48 @@ public class EntregaService {
         entregas.add(new Entrega("7", "Belo Horizonte", "PENDENTE", 14.9, 72));
     }
 
-    // Métodos a implementar...
+      // 1. Listar pendentes
+    public List<Entrega> listarPendentes() {
+        List<Entrega> resultado = new ArrayList<>();
+        for (Entrega e : entregas) {
+            if (e.getStatus().equalsIgnoreCase("PENDENTE")) {
+                resultado.add(e);
+            }
+        }
+        return resultado;
+    }
+
+    public List<Entrega> listarPesadas(){
+        List<Entrega> resultado = new ArrayList<>();
+        double compara = 10.0;
+
+        for(int i = 0; i < entregas.size(); i++){
+            if(entregas.get(i).getPeso() > compara){
+                resultado.add(entregas.get(i));
+            }
+        }
+        return resultado;
+    }
+
+    // 2. Calcular valor total de entregues
+    // public double calcularValorTotal() {
+    //     double soma = 0;
+    //     for (int i = 0; i = ) {
+    //         if (e.getStatus().equalsIgnoreCase("ENTREGUE")) {
+    //             soma += e.getValorFrete();
+    //         }
+    //     }
+    //     return soma;
+    // }
+        public List<Entrega> buscarPorDestino(String destino) {
+        List<Entrega> resultado = new ArrayList<>();
+        for (Entrega e : entregas) {
+            if (e.getDestino().toLowerCase().contains(destino.toLowerCase())) {
+                resultado.add(e);
+            }
+        }
+        return resultado;
+    }
+
+    
 }
