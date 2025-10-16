@@ -8,20 +8,21 @@ public class service {
     public static void main(String[] args) {
         List<Integer> numeros = Arrays.asList(5, 10, 15, 20, 25, 30, 35);
 
-        System.out.println("=== Exercício 1: Filtrar números pares ===");
-        List<Integer> pares = filtrarParesStream(numeros);
-        System.out.println("Com Stream: " + pares);
+        // System.out.println("=== Exercício 1: Filtrar números pares ===");
+        // List<Integer> pares = filtrarParesStream(numeros);
+        // System.out.println("Com Stream: " + pares);
         System.out.println("Sem Stream: " + filtrarParesManual(numeros));
 
-        System.out.println("\n=== Exercício 2: Somar números maiores que 10 ===");
-        int soma = somarMaioresQueDezStream(numeros);
-        System.out.println("Com Stream: " + soma);
+        // System.out.println("\n=== Exercício 2: Somar números maiores que 10 ===");
+        // int soma = somarMaioresQueDezStream(numeros);
+        // System.out.println("Com Stream: " + soma);
         System.out.println("Sem Stream: " + somarMaioresQueDezManual(numeros));
 
-        System.out.println("\n=== Exercício 3: Converter para string separada por vírgulas ===");
-        String texto = converterParaStringStream(numeros);
-        System.out.println("Com Stream: " + texto);
-        System.out.println("Sem Stream: " + converterParaStringManual(numeros));
+        // System.out.println("\n=== Exercício 3: Converter para string separada por
+        // vírgulas ===");
+        // String texto = converterParaStringStream(numeros);
+        // System.out.println("Com Stream: " + texto);
+        // System.out.println("Sem Stream: " + converterParaStringManual(numeros));
     }
 
     // ==============================
@@ -34,8 +35,15 @@ public class service {
     }
 
     public static List<Integer> filtrarParesManual(List<Integer> numeros) {
-       
-       
+
+        List<Integer> resultado = new ArrayList<Integer>();
+
+        for (int n:numeros) {
+            if (n % 2 == 0) {
+                resultado.add(n);
+            }
+        }
+        return resultado;
     }
 
     // =======================================
@@ -48,7 +56,16 @@ public class service {
     }
 
     public static int somarMaioresQueDezManual(List<Integer> numeros) {
-     
+
+        int resultado = 0;
+
+        for (int n:numeros) {
+            if (n > 10) {
+                resultado += n;
+            }
+
+        }
+        return resultado;
     }
 
     // ====================================================
