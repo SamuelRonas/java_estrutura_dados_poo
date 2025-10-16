@@ -26,10 +26,10 @@ public class funcoes {
         System.out.println(somaMaiorQueDez(numeros));
 
         // =========================================
-        // 🔹 CHAMADA FUNÇÃO LISTAR MULTIPLOS DE 5
+        // 🔹 CHAMADA FUNÇÃO SOMAR MULTIPLOS DE 5
         // =========================================
 
-
+        System.out.println(somaMultiplosCinco(numeros));
         
     }
 
@@ -45,15 +45,22 @@ public class funcoes {
     
 
     private static int somaMaiorQueDez(List<Integer> numeros){
-        // 🔹 PASSO 1: CRIAR UMA VARIAVEL PARA RESULTADO DO MESMO TIPO DO RETORNO DA FUNÇÃO
+        int resultado = 0; 
 
-        // 🔹 PASSO 2: CRIAR UM LOOP PARA PERCORRER TODOS OS NUMEROS UM A UM 
+        for( int o : numeros){
+            if(o >= 10){
+                resultado = resultado + o;
+            }
+        }
+        return resultado;
+    }
 
-        // 🔹 PASSO 3: PARA CADA NUMERO CRIAR UMA COMPARAÇÃO SE NUMERO MAIOR QUE 10 
-
-        // 🔹 PASSO 4: CASO CONDIÇÃO VERDADEIRA ADICIONAR NO RESULTADO O VALOR DE RESULTADO + VALOR DO NUMERO 
-
-        // 🔹 PASSO 5: FORA DA CONDIÇÃO E DO LOOP RETORNAR O RESULTADO
+    private static int somaMultiplosCinco(List<Integer> numeros){
+        // 🔹 PASSO 1: CRIAR RESULTADO
+        // 🔹 PASSO 2: CRIAR LOOP
+        // 🔹 PASSO 3: DENTRO DO LOOP CRIAR CONDIÇÃO SENDO O QUE REPRESENTA SEU NUMERO MODULO % DE 5 == 0 
+        // 🔹 PASSO 4: SE A CONDICAO ESTIVER VERDADEIRA FAZER RESULTADO RECEBE RESULTADO + O QUE REPRESENTA SEU NUMERO
+        // 🔹 PASSO 1: RETORNAR RESULTADO
     }
 
 
