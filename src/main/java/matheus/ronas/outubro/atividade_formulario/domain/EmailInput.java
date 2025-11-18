@@ -1,0 +1,9 @@
+package matheus.ronas.outubro.atividade_formulario.domain;
+
+import lombok.Data;
+
+@Data
+
+public class EmailInput {
+    private String email;
+}
